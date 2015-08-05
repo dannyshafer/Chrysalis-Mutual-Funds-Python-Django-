@@ -1,0 +1,56 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+
+</head>
+<body>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">Chrysalis Stock</a></h1>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+    <!-- <ul class="right">
+      <li class="active"><a href="#">Right Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="#">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul> -->
+
+    <!-- Left Nav Section -->
+    <!-- <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul> -->
+  </section>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+  <div class="small-8 small-offset-2 columns">
+    <h1>Welcome to Chrysalis Stock</h1>
+  </div>
+</div>
+<div class="row">
+  <form action="/stock_summary/" method="post">
+    <div class="small-12 columns">
+      {% csrf_token %}
+      <div class="small-8 columns">
+        <input type="text" id="symbol" name="symbol" placeholder="Stock Symbol">
+      </div>
+      <div class="small-4 columns">
+        <input type="submit" class="button postfix" value="Hatch it!">
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>

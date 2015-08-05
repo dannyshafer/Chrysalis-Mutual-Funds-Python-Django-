@@ -1,0 +1,127 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+
+</head>
+<body>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">Chrysalis Stock</a></h1>
+      </li>
+    </ul>
+
+</nav>
+<br>
+<br>
+<div class="row">
+  <div class="small-8 small-offset-2 columns">
+    <h1>Summary for: {{current_stock.company_name}}</h1>
+  </div>
+</div>
+<br>
+<div class="row">
+  <h1>The price of {{current_stock.symbol}} right now is ${{current_stock.price}}.</h1>
+</div>
+<div class="row">
+  <div class="large-3 medium-6 small-12 columns">
+    Change for the day: {{current_stock.change}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Volume: {{current_stock.volume}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Previous Close: {{current_stock.prev_close}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Stock Open: {{current_stock.stock_open}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Average Daily Volume: {{current_stock.avg_daily_volume}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Stock Exchange: {{current_stock.stock_exchange}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Market Cap: {{current_stock.market_cap}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Book Value: {{current_stock.book_value}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    EBITDA: {{current_stock.ebitda}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Dividend per Share: {{current_stock.dividend_share}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Dividend Yield: {{current_stock.dividend_yield}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    EPS: {{current_stock.earnings_share}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Day High: {{current_stock.days_high}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Day Low: {{current_stock.days_low}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Year High: {{current_stock.year_high}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Year Low: {{current_stock.year_low}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    50 Day Moving Avg: {{current_stock.fifty_day_moving_avg}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    200 Day Moving Avg: {{current_stock.two_hundred_day_moving_avg}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    P/E Ratio: {{current_stock.price_earnings_ratio}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    PEG Ratio: {{current_stock.price_earnings_growth_ratio}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Price Sales: {{current_stock.price_sales}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Price Book: {{current_stock.price_book}}
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    Short Ratio: {{current_stock.short_ratio}}
+  </div>
+</div>
+<br>
+<br>
+<div class="row">
+  <h1>Historical Returns for: {{current_stock.company_name}}</h1>
+</div>
+<br>
+{% for day in date_metrics %}
+<div class="row">
+  <div class="small-6 large-2 columns">
+    Date: {{day.date}}
+  </div>
+  <div class="small-6 large-2 columns">
+    Open: ${{day.price_open}}
+  </div>
+  <div class="small-6 large-2 columns">
+    Close: ${{day.close}}
+  </div>
+  <div class="small-6 large-2 columns">
+    High: ${{day.high}}
+  </div>
+  <div class="small-6 large-2 columns">
+    Low: ${{day.low}}
+  </div>
+  <div class="small-6 large-2 columns">
+    Vol: {{day.volume}}
+  </div>
+</div>
+{% endfor %}
+</body>
+</html>

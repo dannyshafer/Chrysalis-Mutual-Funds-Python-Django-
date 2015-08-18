@@ -1,4 +1,4 @@
-# ChrysalisTwoApp (Python-Django version)
+# Chrysalis-Mutual-Funds (Python-Django version)
 
 First of all, a demonstration on <a href="https://www.youtube.com/watch?v=tIop2Y_w7M4">Youtube</a>. This is a modified version of my <a href="https://github.com/dannyshafer/ChrysalisApp-final-Sinatra-version-">Sinatra app</a> except implemented in Python/Django and analyzing stocks rather than mutual funds...and consuming an api rather than manually scraping Yahoo Finance. 
 

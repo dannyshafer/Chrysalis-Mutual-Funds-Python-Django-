@@ -10,4 +10,4 @@ Ensure that you have Python, Django, and this external module, <a href="https://
 4. Navigate in your browser to port 8000 unless otherwise specified by your terminal
 5. Enter a symbol and enjoy the ride. 
 
-It would be neat in the future to add the ability to display the time-serues data in a graph format or in some way conducive to finding trends. Other possible functionality might be comparing stocks with each other both in performance and across fundamental metrics (i.e. EPS growth over time, performance versus broader stock market, etc). If you have ideas for improvement, feel free to submit a pull request. :D
+It would be neat in the future to add the ability to display the time-serues data in a graph format or in some way conducive to finding trends. Other possible functionality might be comparing stocks with each other both in performance and across fundamental metrics (i.e. EPS growth over time, performance versus broader stock market, etc). If you have ideas for improvement, feel free to submit a pull request.

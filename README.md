@@ -2,7 +2,7 @@
 
 First of all, a demonstration on <a href="https://www.youtube.com/watch?v=tIop2Y_w7M4">Youtube</a>. This is a modified version of my <a href="https://github.com/dannyshafer/ChrysalisApp-final-Sinatra-version-">Sinatra app</a> except implemented in Python/Django and analyzing stocks rather than mutual funds...and consuming an api rather than manually scraping Yahoo Finance. 
 
-Ensure that you have Python, Django, and this external module, <a href="https://pypi.python.org/pypi/yahoo-finance/1.1.4">Yahoo Finance</a>, installed. 
+Ensure that you have Python 2.7, Django1.8.3, and this external module, <a href="https://pypi.python.org/pypi/yahoo-finance/1.1.4">Yahoo Finance</a>, installed. 
 
 1. Clone from Github
 2. Make migration by running "python manage.py migrate"
